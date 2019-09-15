@@ -91,6 +91,7 @@ nav.desktopMenu .desktopNav button {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   cursor: pointer;
+  outline: none;
 }
 
 nav.desktopMenu .desktopNav button::after {
