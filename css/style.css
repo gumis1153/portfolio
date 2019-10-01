@@ -150,7 +150,7 @@ nav.desktopMenu .desktopNav button:hover {
 
 .menu {
   position: absolute;
-  top: 150%;
+  top: 65%;
   right: 5%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -161,11 +161,12 @@ nav.desktopMenu .desktopNav button:hover {
   z-index: 2;
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 1;
 }
 
-.menu.active {
+/* .menu.active {
   top: 65%;
-}
+} */
 
 @media (min-width: 375px) and (orientation: portrait) {
   .menu {
@@ -221,28 +222,28 @@ nav.desktopMenu .desktopNav button:hover {
   top: -999px;
 }
 
-#hi:checked + .menu {
+#hi:checked+.menu {
   -webkit-transform: translate(-50%, -50%) rotatey(180deg);
   transform: translate(-50%, -50%) rotatey(180deg);
 }
 
-#hi:checked + .menu .bar {
+#hi:checked+.menu .bar {
   -webkit-transform: rotatey(180deg) rotatex(360deg);
   transform: rotatey(180deg) rotatex(360deg);
 }
 
-#hi:checked + .menu .bar:first-child {
+#hi:checked+.menu .bar:first-child {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   margin-top: 18px;
   background: #f1f1f1;
 }
 
-#hi:checked + .menu .bar:nth-child(2) {
+#hi:checked+.menu .bar:nth-child(2) {
   opacity: 0;
 }
 
-#hi:checked + .menu .bar:nth-child(3) {
+#hi:checked+.menu .bar:nth-child(3) {
   margin-top: -12px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -328,7 +329,7 @@ section.head div {
   -ms-flex-line-pack: center;
   align-content: center;
   position: absolute;
-  top: 60%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -336,6 +337,7 @@ section.head div {
   height: 100px;
   -webkit-transition: 1s;
   transition: 1s;
+  opacity: 0;
 }
 
 h1.name {
@@ -384,7 +386,7 @@ h2.title {
 
 section.head img {
   position: absolute;
-  top: 95%;
+  top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -397,6 +399,7 @@ section.head img {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
@@ -406,7 +409,7 @@ section.head img {
   }
 
   section.head img {
-    width: 55vw;
+    width: 40vw;
     top: 65%;
   }
 }
@@ -572,8 +575,8 @@ section.about {
   position: fixed;
   bottom: 0;
   left: 18px;
-  -webkit-transform: translate(-50%, -100%);
-  transform: translate(-50%, -100%);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,11 +594,12 @@ section.about {
   -moz-transform: translate(-50%, -100%);
   -ms-transform: translate(-50%, -100%);
   -o-transform: translate(-50%, -100%);
+  opacity: 0;
 }
 
-.socials.active {
+/* .socials.active {
   transform: translate(-50%, 0%);
-}
+} */
 
 .socials a {
   position: relative;
@@ -824,10 +828,19 @@ p.title {
 }
 
 .portfolioMain a {
+  position: relative;
   -ms-flex-preferred-size: 45%;
   flex-basis: 45%;
   width: 82%;
   margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.portfolioMain .portfolioProjectTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  color: #403f3d;
+  font-size: 10px;
 }
 
 .portfolioMain a img {
@@ -837,8 +850,8 @@ p.title {
 }
 
 .portfolioMain a img:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
   cursor: pointer;
 }
 
@@ -851,9 +864,13 @@ p.title {
     flex-direction: row;
   }
 
+  .portfolioMain .portfolioProjectTitle {
+    font-size: 14px;
+  }
+
   .portfolioMain a img:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
     cursor: pointer;
   }
 }
@@ -1007,10 +1024,8 @@ input[type="submit"]:hover {
   div#main {
     width: 60%;
   }
-}
 
-.imgGrow {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  .portfolioMain .portfolioProjectTitle {
+    font-size: 14px;
+  }
 }

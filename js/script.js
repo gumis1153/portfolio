@@ -35,13 +35,26 @@ const pageStart = () => {
   }, 300);
 };
 
-$(document).ready(function() {
-  $("body").addClass("active");
-  $(".menu").addClass("active");
-  $("section.head div").addClass("active");
-  $(".imgMe").addClass("active");
-  $(".socials").addClass("active");
-});
+const moveElements = () => {
+  if (window.innerWidth > 1024) {
+    btnMenu.style.opacity = "0";
+    headName.style.opacity = "1";
+    imgMe.style.opacity = "1";
+    socials.style.opacity = "1";
+  } else {
+    btnMenu.style.opacity = "1";
+    headName.style.opacity = "1";
+    imgMe.style.opacity = "1";
+    socials.style.opacity = "1";
+  }
+};
+
+window.onresize = () => moveElements();
+
+window.onload = () => {
+  pageStart();
+  moveElements();
+};
 
 $(".btnAbout").click(function() {
   $(".menuSection").removeClass("active");
