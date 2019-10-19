@@ -1029,3 +1029,9 @@ input[type="submit"]:hover {
     font-size: 14px;
   }
 }
+
+.lastProject {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
