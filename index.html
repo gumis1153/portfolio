@@ -1,267 +1,229 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-131810693-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131810693-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag("config", "UA-131810693-1");
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap&subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Piotr Jakubowski | Frontend Developer</title>
-  </head>
+    gtag("config", "UA-131810693-1");
+  </script>
 
-  <body>
-    <nav class="desktopMenu">
-      <div class="desktopNav">
-        <button class="btnAbout">O mnie</button>
-        <button class="btnImprove">Rozwijam się</button>
-        <button class="btnPortfolio">Portfolio</button>
-        <button class="btnContact">Kontakt</button>
-      </div>
-    </nav>
-    <nav class="mobileMenu">
-      <input type="checkbox" id="hi" />
-      <label class="menu" for="hi">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-      </label>
-    </nav>
-    <div class="menuSection">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap&subset=latin-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piotr Jakubowski | Frontend Developer</title>
+</head>
+
+<body>
+  <nav class="desktopMenu">
+    <div class="desktopNav">
       <button class="btnAbout">O mnie</button>
       <button class="btnImprove">Rozwijam się</button>
       <button class="btnPortfolio">Portfolio</button>
       <button class="btnContact">Kontakt</button>
     </div>
-    <div class="wrapper">
-      <section class="head">
-        <div>
-          <h1 class="name">
-            Piotr <strong class="underline">Jakubowski</strong>
-          </h1>
-          <h2 class="title">Frontend Developer</h2>
-        </div>
-        <img class="imgMe" src="img/me.jpg" alt="Piotr Jakubowski" />
-      </section>
-      <section class="about">
-        <div class="aboutTop size">
-          <h1>Troche o mnie</h1>
-        </div>
-        <article class="articleMain size">
-          <p>
-            Jestem Piotr mam 23 lata, ukończyłem technikum informatyczne. Od
-            dwóch lat studiuję zaocznie we Wrocławiu, pracuję w rodzinnej
-            firmie, mieszkam w Lesznie i oczywiście koduję ;) Uczę się przez
-            czytanie dokumentacji i kursy na Udemy. Od jakiegoś czasu zajmuję
-            się Frontendem.
-          </p>
-          <br />
-          <p>
-            Podoba mi się wizja, że mógłbym w przyszłości osiągnąć ten wymarzony
-            przez (chyba)wszystkich work life balance.
-          </p>
-          <br />
-          <p>
-            Lubię tworzyć strony które cieszą oko. To uczucie kiedy jesteś
-            zajęty zupełnie czymś innym i nagle przychodzi Ci do głowy, że
-            problem, nad którym się głowisz od dłuższego czasu można rozwiązać
-            pętlą for i to faktycznie zadziała. Bezcenne :)
-          </p>
-          <br />
-          <p>
-            Obecnie pracuję nad portalem internetowym w którym wykorzystuje
-            React. Mam kilka pomysłów na mniejsze aplikacje, które będę starał
-            się tworzyć raz na dwa tygodnie.
-          </p>
-        </article>
-      </section>
-      <section class="skills">
-        <div class="aboutTop size">
-          <h1>Rozwijam się</h1>
-        </div>
-        <article class="articleMain size">
-          <p>
-            <strong><i class="fab fa-html5"></i></strong> - Myślę, że jest to
-            podstawą. Staram się stosować zasady semantyki dla ułatwienia
-            czytania kodu oraz dla lepszego pozycjonowania stron.
-          </p>
-          <br />
-          <p>
-            <strong><i class="fab fa-css3-alt"></i></strong> - Stosuję kaskadowe
-            arkusze stylów aby strony prezentowały się ładnie. Staram się
-            obniżyć czas ładowania stron dzięki testowanou ich przez dev toolsy.
-          </p>
-          <br />
-          <p>
-            <strong><i class="fab fa-js"></i></strong> - Lubię programować w JS,
-            manipulacja elementami na stronie sprawia mi przyjemność. Tworzenie
-            logiki aplikacji i stron internetowych jest rozwijające i pouczające
-            :)
-          </p>
-          <br />
-          <p>
-            <strong><i class="fab fa-react"></i></strong> - Praca z komponentami
-            stanowymi i bezstanowymi, składnia JSX i pobieranie danych przez
-            API. React jest biblioteką, która szczególnie mi się spodobała.
-          </p>
-          <br />
-          <p>
-            <strong><i class="fab fa-sass"></i></strong> - Coming soon
-          </p>
-          <br />
-          <p>
-            <strong><i class="fab fa-github"></i></strong> - Kontrola wersji
-            jest podstawową rzeczą z której powinien korzystać każdy developer
-            do kontroli swoich plików, wykorzystywałem GitHub oraz Bitbucket.
-          </p>
-        </article>
-      </section>
-      <section class="portfolio">
-        <div class="aboutTop size">
-          <h1>Moje portfolio</h1>
-        </div>
-        <article class="portfolioMain">
-          <a target="_blank" href="http://bramgaz.pl"
-            ><img src="img/bramgaz.jpg" alt="Projekt dla firmy Bramgaz" />
-            <h3 class="portfolioProjectTitle">
-              Strona firmowa Bramgaz | HTML/CSS/JS/jQuery
-            </h3>
-          </a>
+  </nav>
+  <nav class="mobileMenu">
+    <input type="checkbox" id="hi" />
+    <label class="menu" for="hi">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </label>
+  </nav>
+  <div class="menuSection">
+    <button class="btnAbout">O mnie</button>
+    <button class="btnImprove">Rozwijam się</button>
+    <button class="btnPortfolio">Portfolio</button>
+    <button class="btnContact">Kontakt</button>
+  </div>
+  <div class="wrapper">
+    <section class="head">
+      <div>
+        <h1 class="name">
+          Piotr <strong class="underline">Jakubowski</strong>
+        </h1>
+        <h2 class="title">Frontend Developer</h2>
+      </div>
+      <img class="imgMe" src="img/me.jpg" alt="Piotr Jakubowski" />
+    </section>
+    <section class="about">
+      <div class="aboutTop size">
+        <h1>Troche o mnie</h1>
+      </div>
+      <article class="articleMain size">
+        <p>
+          Jestem Piotr mam 23 lata, ukończyłem technikum informatyczne. Od
+          dwóch lat studiuję zaocznie we Wrocławiu, pracuję w rodzinnej
+          firmie, mieszkam w Lesznie i oczywiście koduję ;) Uczę się przez
+          czytanie dokumentacji i kursy na Udemy. Od jakiegoś czasu zajmuję
+          się Frontendem.
+        </p>
+        <br />
+        <p>
+          Podoba mi się wizja, że mógłbym w przyszłości osiągnąć ten wymarzony
+          przez (chyba)wszystkich work life balance.
+        </p>
+        <br />
+        <p>
+          Lubię tworzyć strony które cieszą oko. To uczucie kiedy jesteś
+          zajęty zupełnie czymś innym i nagle przychodzi Ci do głowy, że
+          problem, nad którym się głowisz od dłuższego czasu można rozwiązać
+          pętlą for i to faktycznie zadziała. Bezcenne :)
+        </p>
+        <br />
+        <p>
+          Obecnie pracuję nad portalem internetowym w którym wykorzystuje
+          React. Mam kilka pomysłów na mniejsze aplikacje, które będę starał
+          się tworzyć raz na dwa tygodnie.
+        </p>
+      </article>
+    </section>
+    <section class="skills">
+      <div class="aboutTop size">
+        <h1>Rozwijam się</h1>
+      </div>
+      <article class="articleMain size">
+        <p>
+          <strong><i class="fab fa-html5"></i></strong> - Myślę, że jest to
+          podstawą. Staram się stosować zasady semantyki dla ułatwienia
+          czytania kodu oraz dla lepszego pozycjonowania stron.
+        </p>
+        <br />
+        <p>
+          <strong><i class="fab fa-css3-alt"></i></strong> - Stosuję kaskadowe
+          arkusze stylów aby strony prezentowały się ładnie. Staram się
+          obniżyć czas ładowania stron dzięki testowanou ich przez dev toolsy.
+        </p>
+        <br />
+        <p>
+          <strong><i class="fab fa-js"></i></strong> - Lubię programować w JS,
+          manipulacja elementami na stronie sprawia mi przyjemność. Tworzenie
+          logiki aplikacji i stron internetowych jest rozwijające i pouczające
+          :)
+        </p>
+        <br />
+        <p>
+          <strong><i class="fab fa-react"></i></strong> - Praca z komponentami
+          stanowymi i bezstanowymi, składnia JSX i pobieranie danych przez
+          API. React jest biblioteką, która szczególnie mi się spodobała.
+        </p>
+        <br />
+        <p>
+          <strong><i class="fab fa-sass"></i></strong> - Coming soon
+        </p>
+        <br />
+        <p>
+          <strong><i class="fab fa-github"></i></strong> - Kontrola wersji
+          jest podstawową rzeczą z której powinien korzystać każdy developer
+          do kontroli swoich plików, wykorzystywałem GitHub oraz Bitbucket.
+        </p>
+      </article>
+    </section>
+    <section class="portfolio">
+      <div class="aboutTop size">
+        <h1>Moje portfolio</h1>
+      </div>
+      <article class="portfolioMain">
+        <a target="_blank" href="http://bramgaz.pl"><img src="img/bramgaz.jpg" alt="Projekt dla firmy Bramgaz" />
+          <h3 class="portfolioProjectTitle">
+            Strona firmowa Bramgaz | HTML/CSS/JS/jQuery
+          </h3>
+        </a>
 
-          <a target="_blank" href="http://piotrjakubowski.pl/game/"
-            ><img src="img/game.jpg" alt="Prosta gra turowa" />
-            <h3 class="portfolioProjectTitle">Prosta gra | HTML/CSS/JS</h3>
-          </a>
+        <a target="_blank" href="http://piotrjakubowski.pl/game/"><img src="img/game.jpg" alt="Prosta gra turowa" />
+          <h3 class="portfolioProjectTitle">Prosta gra | HTML/CSS/JS</h3>
+        </a>
 
-          <a target="_blank" href="http://piotrjakubowski.pl/weather-app/"
-            ><img
-              src="img/weatherapp.png"
-              alt="Minimalistyczna aplikacja pogodowa"
-            />
-            <h3 class="portfolioProjectTitle">
-              Aplikacja pogodowa | HTML/CSS/React/API
-            </h3>
-          </a>
+        <a target="_blank" href="http://piotrjakubowski.pl/weather-app/"><img src="img/weatherapp.png"
+            alt="Minimalistyczna aplikacja pogodowa" />
+          <h3 class="portfolioProjectTitle">
+            Aplikacja pogodowa | HTML/CSS/React/API
+          </h3>
+        </a>
 
-          <a target="_blank" href="https://piotrjakubowski.pl/secret-messages/"
-            ><img
-              src="img/secret-messages.jpg"
-              alt="Aplikacja do szyfrowania wiadomośći"
-            />
-            <h3 class="portfolioProjectTitle">
-              Generator tajnych wiadomości | HTML/CSS/JS
-            </h3>
-          </a>
-          <a
-            class="lastProject"
-            target="_blank"
-            href="https://piotrjakubowski.pl/clock-n-alarm/"
-            ><img src="img/clock-n-alarm.jpg" alt="Zegar z budzikiem" />
-            <h3 class="portfolioProjectTitle">
-              Zegar z budzikiem | HTML/CSS/JS
-            </h3>
-          </a>
-        </article>
-      </section>
-      <section class="contact">
-        <div class="aboutTop size">
-          <h1>Kontakt</h1>
+        <a target="_blank" href="https://piotrjakubowski.pl/secret-messages/"><img src="img/secret-messages.jpg"
+            alt="Aplikacja do szyfrowania wiadomośći" />
+          <h3 class="portfolioProjectTitle">
+            Generator tajnych wiadomości | HTML/CSS/JS
+          </h3>
+        </a>
+        <a target="_blank" href="https://piotrjakubowski.pl/clock-n-alarm/"><img src="img/clock-n-alarm.jpg"
+            alt="Zegar z budzikiem" />
+          <h3 class="portfolioProjectTitle">
+            Zegar z budzikiem | HTML/CSS/JS
+          </h3>
+        </a>
+        <a target="_blank" href="https://piotrjakubowski.pl/calculator/"><img src="img/calculator.jpg"
+            alt="Prosty kalkulator" />
+          <h3 class="portfolioProjectTitle">
+            Prosty kalkulator | HTML/CSS/JS
+          </h3>
+        </a>
+      </article>
+    </section>
+    <section class="contact">
+      <div class="aboutTop size">
+        <h1>Kontakt</h1>
+      </div>
+      <article class="articleMain size">
+        <p>
+          Jesteś rekruterem i zainteresowała Cię moja osoba? Odezwij się do
+          mnie przez LinkedIn lub wiadomość mail. Chyba że szybciej dostałeś
+          moje cv to zadzwoń :)
+        </p>
+        <p>
+          Może jesteś zainteresowany abym wykonał dla Ciebie stronę
+          interentową? Proszę o kontakt przez formularz kontaktowy.
+        </p>
+
+        <div id="main">
+          <h1>Napisz do mnie</h1>
+          <!-- <div id="form_sample"></div> -->
+          <form name="mailForm" action="send_mail.php" onsubmit="return formValid()" method="post">
+            <h2>Formularz kontaktowy</h2>
+            <hr />
+            <br /><label>Temat : </label><input type="text" name="dtitle" /><br /><label>Twój adres mail :
+            </label><input type="text" name="demail" /><br /><label>Twoja wiadomość : </label><textarea
+              name="dmessage"></textarea><br /><input type="submit" name="dsubmit" value="Wyślij" />
+          </form>
+          <!-- <script src="js/form.js"></script> -->
         </div>
-        <article class="articleMain size">
-          <p>
-            Jesteś rekruterem i zainteresowała Cię moja osoba? Odezwij się do
-            mnie przez LinkedIn lub wiadomość mail. Chyba że szybciej dostałeś
-            moje cv to zadzwoń :)
-          </p>
-          <p>
-            Może jesteś zainteresowany abym wykonał dla Ciebie stronę
-            interentową? Proszę o kontakt przez formularz kontaktowy.
-          </p>
+        <p class="mail">
+          Użyj swojego klienta mail:
+          <a href="mailto:jakubowski656@gmail.com"><i class="fas fa-paper-plane"></i></a>
+        </p>
+      </article>
+    </section>
 
-          <div id="main">
-            <h1>Napisz do mnie</h1>
-            <!-- <div id="form_sample"></div> -->
-            <form
-              name="mailForm"
-              action="send_mail.php"
-              onsubmit="return formValid()"
-              method="post"
-            >
-              <h2>Formularz kontaktowy</h2>
-              <hr />
-              <br /><label>Temat : </label
-              ><input type="text" name="dtitle" /><br /><label
-                >Twój adres mail : </label
-              ><input type="text" name="demail" /><br /><label
-                >Twoja wiadomość : </label
-              ><textarea name="dmessage"></textarea><br /><input
-                type="submit"
-                name="dsubmit"
-                value="Wyślij"
-              />
-            </form>
-            <!-- <script src="js/form.js"></script> -->
-          </div>
-          <p class="mail">
-            Użyj swojego klienta mail:
-            <a href="mailto:jakubowski656@gmail.com"
-              ><i class="fas fa-paper-plane"></i
-            ></a>
-          </p>
-        </article>
-      </section>
+    <aside class="socials">
+      <a href="https://github.com/gumis1153" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/piotr-jakubowski-aa0ba2137/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a href="https://codepen.io/piotr-jakubowski/" target="_blank"><i class="fab fa-codepen"></i></a>
+      <a href="https://www.facebook.com/piotr.jakubowski.758" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </aside>
+  </div>
+  <footer>
+    &copy;
+    <p>Piotr Jakubowski |</p>
+    <p class="title">Frontend Developer</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
 
-      <aside class="socials">
-        <a href="https://github.com/gumis1153" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/piotr-jakubowski-aa0ba2137/"
-          target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a href="https://codepen.io/piotr-jakubowski/" target="_blank"
-          ><i class="fab fa-codepen"></i
-        ></a>
-        <a href="https://www.facebook.com/piotr.jakubowski.758" target="_blank"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-      </aside>
-    </div>
-    <footer>
-      &copy;
-      <p>Piotr Jakubowski |</p>
-      <p class="title">Frontend Developer</p>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
-  </body>
 </html>
